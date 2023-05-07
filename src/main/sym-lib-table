@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "odroid_h3_uitx_adapter")(type "KiCad")(uri "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.kicad_sym")(options "")(descr ""))
+)
