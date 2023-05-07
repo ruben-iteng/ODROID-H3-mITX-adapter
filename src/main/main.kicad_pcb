@@ -351,7 +351,7 @@
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 6eb99426-08d2-46af-b153-c32df1d1c705))
     (pad "6" smd rect (at 0.85 -0.9 180) (size 0.8 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 620e3607-8a1b-4649-9e7e-c7ba6397918b))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/APA102-2020_MODEL_v15.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/APA102-2020_MODEL_v15.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1172,7 +1172,7 @@
           )
           (width 0.12) (fill yes))
       ) (tstamp 12e7c510-8042-4f30-a436-ae1f4728e8a0))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/WT32-ESP01.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/WT32-ESP01.step"
       (offset (xyz -0.6 2.65 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1259,7 +1259,7 @@
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 910b3d9f-5e6d-4be6-b2a5-c27d45641ff2))
     (pad "6" smd rect (at 0.85 -0.9 180) (size 0.8 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 9b2d5c28-767d-422b-b596-400f3221b099))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/APA102-2020_MODEL_v15.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/APA102-2020_MODEL_v15.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1469,7 +1469,7 @@
       (net 1 "GND") (pinfunction "Shield") (pintype "passive") (tstamp 90e8662e-461c-422b-a639-bf2d0c0d1612))
     (pad "5" thru_hole circle (at 2.75 3.5 180) (size 2.8 2.8) (drill 1.9) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Shield") (pintype "passive") (tstamp 6017e816-1097-49e6-b424-cc9552f9d18e))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/USB-226-BRY.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/USB-226-BRY.step"
       (offset (xyz -3.625 8.625 -1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2258,7 +2258,7 @@
           )
           (width 0.12) (fill yes))
       ) (tstamp e5293e82-c8f7-4ddf-8f31-f8ce33181f3c))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
       (offset (xyz -3.625 8.625 -1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2946,7 +2946,7 @@
           )
           (width 0.12) (fill yes))
       ) (tstamp 63c011e4-506a-45d3-9ee2-5813e44dc082))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
       (offset (xyz -3.625 8.625 -1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5826,7 +5826,7 @@
           )
           (width 0.12) (fill yes))
       ) (tstamp 86405c93-8d4b-43d4-aa73-b14f23537b05))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
       (offset (xyz -3.625 8.625 -1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6183,7 +6183,7 @@
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp f119d673-1c63-486d-830f-a7389b946458))
     (pad "6" smd rect (at 0.85 -0.9 180) (size 0.8 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 7786c9cb-a231-414a-bb0d-1d2bc57d3223))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/APA102-2020_MODEL_v15.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/APA102-2020_MODEL_v15.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -7050,7 +7050,7 @@
           )
           (width 0.12) (fill yes))
       ) (tstamp d921296f-7b62-4e9a-ae4d-7cfacaa38255))
-    (model "${KIPRJMOD}/libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
+    (model "${KIPRJMOD}/../../libs/odroid_h3_uitx_adapter.3dshapes/SMTSO3035CTJ.step"
       (offset (xyz -3.625 8.625 -1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
