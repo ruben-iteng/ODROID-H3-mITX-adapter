@@ -20,19 +20,19 @@
 - 1x10 header exposing ESP32 GPIO
   - GPIO4
   - GPI36
-  - APA102
-    - Data
-    - Clock
+  - GPIO14
+  - GPIO14 5V OUT
+  - GPIO12
 - 1x6 header exposing ESP32 programming
-  - GPIO0
-  - ENABLE
+  - Pin conmpatible with FT232 boards
+  - 3V3
   - RX
   - TX
 - Front IO
   - 2xUSB2.0 header
   - Front IO header
     - Power LED connected to +5V_RUN
-    - HDD connected to ETH_LINK activity (ESP32)
+    - HDD connected to ESP32 GPIO4
     - PWR button connected to ODROID
     - RESET button connected to ESP32 GPI39
 - On board USB2.0 A connector to ODROID (USB1)
@@ -46,9 +46,8 @@
   - Remote UART terminal (BIOS access)
   - 3x USB power control
   - Reset button input
-  - 3x APA102 on board RGB LEDs (can be extended via header)
   - PWR_ON button controll of ODROID via optocoupler
-  - Always-on, powered by +5V_STBY
+  - Always-on, powered by +5V_STBY or USB Type-C PD input
 
 ## Manufacturing
 
