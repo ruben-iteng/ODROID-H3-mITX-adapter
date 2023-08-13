@@ -6,8 +6,8 @@
 
   (title_block
     (title "ODROID H3(+) mITX adapter")
-    (date "2023-05-07")
-    (rev "1.0.0")
+    (date "2023-08-13")
+    (rev "1.1.0")
   )
 
   (lib_symbols
