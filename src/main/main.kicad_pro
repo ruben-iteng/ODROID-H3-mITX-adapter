@@ -605,6 +605,10 @@
     [
       "735d1b9d-8c9f-485f-b4f3-dab2c75d1545",
       "USB_protection2"
+    ],
+    [
+      "84754662-b24d-4b93-aea5-3102a5c3504d",
+      "USB PD input"
     ]
   ],
   "text_variables": {}
