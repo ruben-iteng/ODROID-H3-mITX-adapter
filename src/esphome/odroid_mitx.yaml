@@ -1,0 +1,190 @@
+substitutions:
+  node_name: "nasfw"
+  node_friendly_name: "NaSFW"
+  comment: "durp"
+  global_update_interval: 60s
+  debug_update_interval: 5s
+
+dashboard_import:
+  package_import_url: #github://esphome/esphome-project-template/project-template-esp32.yaml@v6
+  import_full_config: false # or true
+
+#external_components:
+#  - source: github://oxan/esphome-stream-server
+
+esphome:
+  name: ${node_name}
+  project:
+    name: esphome.uart-proxy
+    version: "1.0.0" # hardware version
+  comment: ${comment}
+  #platform: esp32
+  build_path: ./build/${node_name}
+
+esp32:
+  board: esp32doit-devkit-v1
+  framework:
+    type: arduino
+    version: recommended
+
+api:
+  encryption:
+    key: "Tbxq/OIHbx2SU9DRQlIjAs81FzaEBuCWW5p5OLZRjvs="
+logger:
+ota:
+
+wifi:
+  ssid: "maxxhouse"
+  password: "Heidi&Ruben@Maximilian_2006"
+  #reboot_timeout: ${reboot_timeout}
+  ap:
+    ssid: ${node_name}
+    password: "12345678"
+  # Directly connects to WiFi network without doing a full scan first.
+  fast_connect: true
+captive_portal:
+
+#stream_server:
+#  uart_id: uart_2
+#  port: 6638
+#  buffer_size: 128 # bytes
+
+#uart:
+#  tx_pin: GPIO1
+#  rx_pin: GPIO3
+#  baud_rate: 115200
+#  data_bits: 8
+#  parity: NONE
+#  stop_bits: 1
+#  rx_buffer_size: 256
+#  id: uart_2
+
+binary_sensor:
+  #- platform: stream_server
+  #  connected:
+  #    name: Connected
+  - platform: gpio
+    pin:
+      number: GPIO39
+      inverted: false
+      mode:
+        input: true
+        #pullup: true # not supported on GPIO39
+    name: "Reset Button"
+  - platform: gpio
+    pin:
+      number: GPIO35
+      inverted: false
+      mode:
+        input: true
+        #pullup: false # not supported on GPIO35
+    name: "Power"
+    id: power_state
+    device_class: power
+
+#sensor:
+#  - platform: stream_server
+#    connection_count:
+#      name: Number of connections
+
+#ethernet:
+#  type: LAN8720
+#  mdc_pin: GPIO23
+#  mdio_pin: GPIO18
+#  clk_mode: GPIO0_IN
+#  phy_addr: 1
+#  power_pin: GPIO16
+
+#text_sensor:
+#  - platform: ethernet_info
+#    ip_address:
+#  - platform: wifi_info
+#    ip_address:
+#    ssid:
+#    bssid:
+#    mac_address:
+#    scan_results:
+
+#wifi:
+#  enable_on_boot: false # new config option
+
+#on_...:
+#  - if:
+#      condition: wifi.enabled # new condition
+#      then:
+#        - wifi.disable: # new action
+#      else:
+#        - wifi.enable: # new action
+
+output:
+  - platform: gpio
+    pin:
+      number: GPIO15
+      inverted: false
+      mode:
+        output: true
+        pulldown: true
+    id: power_button
+
+button:
+  - platform: template
+    name: "Power"
+    icon: "mdi:power"
+    on_press:
+      - if:
+          condition:
+            binary_sensor.is_on: power_state
+          then:
+            - logger.log: "Powering OFF ODROID"
+            - output.turn_on: power_button
+            - delay: 5s
+            - output.turn_off: power_button
+          else:
+            - logger.log: "Powering ON ODROID"
+            - output.turn_on: power_button
+            - delay: 500ms
+            - output.turn_off: power_button
+
+light:
+  - platform: fastled_spi
+    chipset: APA102
+    data_pin: GPIO14
+    clock_pin: GPIO12
+    num_leds: 3
+    data_rate: 10Mhz
+    #rgb_order: RGB
+    name: "Status Lights"
+    effects:
+      - addressable_color_wipe:
+
+switch:
+  - platform: gpio
+    pin:
+      number: GPIO2
+      inverted: false
+      mode:
+        output: true
+        pullup: true
+    id: usb_0_power
+    name: "USB 0"
+  - platform: gpio
+    pin:
+      number: GPIO32
+      inverted: false
+      mode:
+        output: true
+        pulldown: true
+    id: usb_1_power
+    name: "USB 1"
+  - platform: gpio
+    pin:
+      number: GPIO33
+      inverted: false
+      mode:
+        output: true
+        pulldown: true
+    id: usb_2_power
+    name: "USB 2"
+
+debug:
+  update_interval: ${debug_update_interval}

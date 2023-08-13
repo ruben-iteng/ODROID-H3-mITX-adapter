@@ -6,8 +6,8 @@
 
   (title_block
     (title "ODROID H3(+) mITX adapter")
-    (date "2023-05-07")
-    (rev "1.0.0")
+    (date "2023-08-13")
+    (rev "1.1.0")
   )
 
   (lib_symbols
@@ -961,7 +961,7 @@
           (reference "#PWR0120") (unit 1)
         )
         (path "/2a886fd6-2916-429a-83b7-5c78dd9fc58d/d2b75146-6fcd-4cec-8c17-a2810b6898f8"
-          (reference "#PWR0303") (unit 1)
+          (reference "#PWR0304") (unit 1)
         )
       )
     )
@@ -993,7 +993,7 @@
           (reference "D103") (unit 1)
         )
         (path "/2a886fd6-2916-429a-83b7-5c78dd9fc58d/d2b75146-6fcd-4cec-8c17-a2810b6898f8"
-          (reference "D303") (unit 1)
+          (reference "D302") (unit 1)
         )
       )
     )
@@ -1021,7 +1021,7 @@
           (reference "#PWR0119") (unit 1)
         )
         (path "/2a886fd6-2916-429a-83b7-5c78dd9fc58d/d2b75146-6fcd-4cec-8c17-a2810b6898f8"
-          (reference "#PWR0302") (unit 1)
+          (reference "#PWR0303") (unit 1)
         )
       )
     )
@@ -1053,7 +1053,7 @@
           (reference "R107") (unit 1)
         )
         (path "/2a886fd6-2916-429a-83b7-5c78dd9fc58d/d2b75146-6fcd-4cec-8c17-a2810b6898f8"
-          (reference "R303") (unit 1)
+          (reference "R302") (unit 1)
         )
       )
     )
@@ -1136,7 +1136,7 @@
           (reference "D104") (unit 1)
         )
         (path "/2a886fd6-2916-429a-83b7-5c78dd9fc58d/d2b75146-6fcd-4cec-8c17-a2810b6898f8"
-          (reference "D304") (unit 1)
+          (reference "D303") (unit 1)
         )
       )
     )
@@ -1263,7 +1263,7 @@
           (reference "#PWR0105") (unit 1)
         )
         (path "/2a886fd6-2916-429a-83b7-5c78dd9fc58d/d2b75146-6fcd-4cec-8c17-a2810b6898f8"
-          (reference "#PWR0304") (unit 1)
+          (reference "#PWR0302") (unit 1)
         )
       )
     )
@@ -1295,7 +1295,7 @@
           (reference "R108") (unit 1)
         )
         (path "/2a886fd6-2916-429a-83b7-5c78dd9fc58d/d2b75146-6fcd-4cec-8c17-a2810b6898f8"
-          (reference "R304") (unit 1)
+          (reference "R303") (unit 1)
         )
       )
     )
